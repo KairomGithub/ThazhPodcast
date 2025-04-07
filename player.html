@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Nghe Podcast - Thazh Podcast</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Thazh Podcast</h1>
+    <nav>
+      <a href="index.html">Trang chủ</a>
+      <a href="profile.html">Hồ sơ</a>
+    </nav>
+  </header>
+  <main class="player-container">
+    <div class="podcast-info">
+      <img id="podcast-image" src="" alt="Podcast Cover">
+      <h2 id="podcast-title"></h2>
+      <p id="podcast-author"></p>
+    </div>
+    <div class="player-controls">
+      <button id="rewind">⏪ 10s</button>
+      <button id="play-pause">▶️</button>
+      <button id="forward">⏩ 10s</button>
+      <input type="range" id="progress" min="0" max="100" value="0">
+      <span id="time">0:00 / 0:00</span>
+    </div>
+    <audio id="audio-player" src=""></audio>
+    <div class="chapter-list">
+      <h3>Chapters</h3>
+      <ul id="chapters"></ul>
+    </div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
